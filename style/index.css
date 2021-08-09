@@ -48,9 +48,7 @@ table {
     padding:0;
     margin:0;
     max-width:100%;
-    /* border:1.5px solid #4f4f4f; */
-
-    
+    /* border:1.5px solid #4f4f4f;     */
 }
 
 /*General styles*/
@@ -110,11 +108,11 @@ nav{
     width:40%;
     display:flex;
     /* justify-content: space-between; */
-    align-items: flex-end;
+    /* align-items: flex-end; */
 }
 a{
     text-decoration: none;
-    display: inline-block;
+    /* display: inline-block; */
     padding: 2%;
     font-size: 2.25rem;
     color: #4f4f4f;
@@ -130,7 +128,7 @@ a:hover{
 
 /*about styling*/
 #about{
-    padding-top: 11.5%;
+    /* padding-top: 11.5%; */
     display: flex;
     width: 100%;
 }
@@ -171,4 +169,99 @@ footer{
 
 footer a{
     margin-top: 5%;
+}
+
+/*media queries*/
+/*tablet view - 800px*/
+#about{
+    margin-top: 20%;
+    /* margin: 20% 2% 2% 2% */
+    padding: 0 2%;
+}
+#about p{
+    font-size: 2.25rem;
+    padding: 2%;
+}
+.pic1, .pic2, .pic3, .pic4, .pic5, .pic6, .pic7, .pic8{
+    /* width: 50%; */
+    padding: 2%;
+}
+footer h3{
+    margin-bottom: 8%;
+}
+
+/*mobile-500px*/
+@media (max-width: 500px){
+    #about{
+        margin-top: 45.25%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #about h2{
+        font-size: 3rem;
+        margin-top: 3%;
+    }
+    #about p, button{
+        font-size: 1.8rem;
+    }
+    .text-container{
+        width: 80%;
+    }
+    .bgimg{
+        width: 100%;
+        padding: 35%; 
+        background-image: url('https://picsum.photos/500/300');
+    }
+    h1{
+        text-align: center;
+        font-size: 4rem;
+    }
+    .links{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+    }
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        padding: 5%;
+        align-content: center;
+    }
+    nav a{
+        font-size: 1.5rem;
+    }
+    .gallery{
+        display: flex;
+        flex-flow: wrap;
+        width: 100%;
+    }
+    .gallery p{
+        font-size: 2rem;
+    }
+    .row1, .row2{
+        flex-flow: wrap;
+        width:100%;
+        margin: 0;
+        padding: 2%;
+    }
+    .pic1, .pic2, .pic3, .pic4, .pic5, .pic6, .pic7, .pic8{
+        width: 50%;
+        padding: 3%;
+    }
+    footer h3{
+        font-size: 2.5rem;
+        margin-bottom: 6%;
+    }
+    footer a{
+        margin-top: 10%;
+        font-size: 1.75rem;
+    }
 }
