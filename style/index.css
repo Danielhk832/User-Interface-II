@@ -173,7 +173,22 @@ footer a{
 
 /*media queries*/
 /*tablet view - 800px*/
-
+#about{
+    margin-top: 20%;
+    /* margin: 20% 2% 2% 2% */
+    padding: 0 2%;
+}
+#about p{
+    font-size: 2.25rem;
+    padding: 2%;
+}
+.pic1, .pic2, .pic3, .pic4, .pic5, .pic6, .pic7, .pic8{
+    /* width: 50%; */
+    padding: 2%;
+}
+footer h3{
+    margin-bottom: 8%;
+}
 
 /*mobile-500px*/
 @media (max-width: 500px){
@@ -197,7 +212,6 @@ footer a{
         width: 100%;
         padding: 35%; 
         background-image: url('https://picsum.photos/500/300');
-
     }
     h1{
         text-align: center;
@@ -241,9 +255,6 @@ footer a{
     .pic1, .pic2, .pic3, .pic4, .pic5, .pic6, .pic7, .pic8{
         width: 50%;
         padding: 3%;
-    }
-    footer{
-        /* padding: 0; */
     }
     footer h3{
         font-size: 2.5rem;
